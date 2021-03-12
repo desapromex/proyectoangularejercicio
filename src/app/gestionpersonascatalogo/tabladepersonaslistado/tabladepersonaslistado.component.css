@@ -1,0 +1,33 @@
+a.btndescargar{
+	color:#00f;
+	text-decoration: underline blue; 
+}
+.ocultoinvisible{
+	display:none;
+}
+table.table.table-striped{
+    margin: auto;
+	background:#fff;
+    max-width: 600px;
+    width: 100%;
+}
+
+table.table.table-striped thead tr th{
+    
+	background:#ccc;
+}
+
+
+table.table.table-striped tbody tr td{
+    
+	background:#fff;
+}
+
+table.table.table-striped tbody tr td.odd{
+    
+	background:#d8eeff;
+}
+
+h2.titulo{
+	text-align:center;
+}

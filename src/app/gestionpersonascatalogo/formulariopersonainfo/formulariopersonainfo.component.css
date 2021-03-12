@@ -1,0 +1,17 @@
+p.areadato {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.wrapformulario{
+    padding: 25px;
+    padding-top: 1px;
+    background: #fafafa;
+    border: solid 3px #fff;
+}
+.wrapsubareaderecha{
+	text-align:right;
+	width:100%;
+}
+.wrapsubareaderecha button{
+	font-size: 9pt;
+}

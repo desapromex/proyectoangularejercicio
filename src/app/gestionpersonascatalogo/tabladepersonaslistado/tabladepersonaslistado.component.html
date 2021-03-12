@@ -1,0 +1,24 @@
+<div>
+<a #downloadauxiliar target="_blank" class="ocultoinvisible">ssssssssqw</a>
+<h2 class="titulo">Personas</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Sexo</th>
+          <th>Documento</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr  
+	  *ngFor="let perso of personasVectorObjeos; index as iwc;"
+	  >
+        <td class="{{(iwc%2) ? 'odd' : ''}}">{{ perso.nombre }}</td>
+		<td class="{{(iwc%2) ? 'odd' : ''}}">{{ perso.edad }}</td>
+		<td class="{{(iwc%2) ? 'odd' : ''}}">{{ perso.sexo }}</td>			
+		<td class="{{(iwc%2) ? 'odd' : ''}}"><span *ngIf="perso.documento !=''; else noveodocumento" >{{perso.documentoname}} <a (click)="descargardocumentolocal(perso.id)" class="btndescargar">descargar</a></span><ng-template #noveodocumento><span>no</span></ng-template></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

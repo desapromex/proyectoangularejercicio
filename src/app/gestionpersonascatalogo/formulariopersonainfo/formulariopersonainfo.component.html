@@ -1,0 +1,18 @@
+<div class="wrapformulario">
+<h2>Formulario</h2>
+<div class="wrapsubareaderecha"><button (click)="pedirDatosAleatorioPersona()">API randomapi.com Aleatorio nombre,edad</button></div>
+<form #formdepersona action="" class="formulariodepersona">
+<p class="areadato"><label for="">Nombre</label><br/>
+<input #nombre  name="nombre" [(ngModel)]="nuevapersona.nombre" type="text" required></p>
+<p class="areadato"><label for="">Edad</label><br/>
+<input #edad name="edad" [(ngModel)]="nuevapersona.edad" type="text" required></p>
+<p class="areadato"><label for="">Sexo</label><br/>
+<select #selpersexo name="selpersexo" [(ngModel)]="nuevapersona.sexo">
+	<option selected="selected" value=""></option>
+    <option *ngFor="let sexoitem of vectorsexos" [value]="sexoitem.value">{{sexoitem.title}}</option> 
+</select></p>
+<p class="areadato"><label for="">Documento Upload</label><br/>
+<input #documentofileForUpload  (change)="onFileChanged($event)"   type="file" required></p></form><br/>
+<br/>
+<p class="areadato"><button (click)="guardarPersonaNueva()">Guardar Formulario Persona</button></p>
+</div>
